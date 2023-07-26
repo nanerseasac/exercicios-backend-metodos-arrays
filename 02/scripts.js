@@ -11,7 +11,7 @@ const divideArr = (arr, num) => {
 		grupo1 += division;
 		grupo2 += division2;
 	}
-	return `Grupo 1:${grupo1} & Grupo 2: ${grupo2} `
+	return `Grupo 1:${grupo1} & Grupo 2: ${grupo2} `;
 };
 
 console.log(divideArr(nomes, 4));

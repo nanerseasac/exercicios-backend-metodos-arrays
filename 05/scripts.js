@@ -8,11 +8,10 @@ const agendarPaciente = (pacientes, paciente) => {
 };
 console.log(agendarPaciente(pacientes, "Fabio"));
 
-const atenderPaciente = (pacientes, atendido) => {
-	const arr = pacientes.slice();
-	if (arr.includes(atendido)) {
-		const index = arr.indexOf(atendido);
-		arr.splice(index, 1);
+const atenderPaciente = (pacientes, atend) => {
+	const arr = pacientes.slice()
+	if(arr[0] === atend) {
+		arr.shift()
 	}
 
 	return arr.join(", ");

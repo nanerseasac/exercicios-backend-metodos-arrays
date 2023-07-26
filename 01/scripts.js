@@ -1,13 +1,13 @@
-const frutas = ['Banana', 'Maçã', 'Abacaxi', 'Pêra', 'Uva'];
+const frutas = ["Banana", "Maçã", "Abacaxi", "Pêra", "Uva"];
 
 const reversedArr = frutas.slice().reverse();
-const strArr = reversedArr.join(', ');
-console.log(strArr)
+const strArr = reversedArr.join(", ");
+console.log(strArr);
 
-const arrReversed = strArr.split(', ');
+const arrReversed = strArr.split(", ");
 
 frutas.pop();
 frutas.shift();
-frutas.push('Melão');
+frutas.push("Melão");
 
 console.log(frutas, reversedArr);

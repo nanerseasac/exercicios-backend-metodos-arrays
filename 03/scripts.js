@@ -1,9 +1,16 @@
-const nomes = ['Ford Ká', 'Ranger', 'Hilux', 'Corola', 'Fusca', 'Chevete', 'Brasilia'];
+const nomes = [
+	"Ford Ká",
+	"Ranger",
+	"Hilux",
+	"Corola",
+	"Fusca",
+	"Chevete",
+	"Brasilia",
+];
 
 const getCarName = (cars, position) => {
-    const gettingCar = cars.splice(position, 3)
-    return gettingCar.join(' - ')
+	const gettingCar = cars.splice(position, 3);
+	return gettingCar.join(" - ");
+};
 
-}
-
-console.log(getCarName(nomes, 3))
+console.log(getCarName(nomes, 3));
